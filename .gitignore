@@ -1,0 +1,19 @@
+# Local generated files and dependency caches
+node_modules/
+.pnpm-store/
+*.log
+*.tgz
+*.zip
+
+# Local handoff archives and user reference material
+分享包/
+references/
+design/
+
+# Local credentials and machine settings
+.env
+.env.*
+!.env.example
+.npmrc
+.DS_Store
+Thumbs.db

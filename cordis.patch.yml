@@ -1,0 +1,4 @@
+# Desktop: add this directory through Plugins → Add plugin.
+- insert:
+    - id: ui-theme-bocchi-meow
+      name: dsh-theme-bocchi-meow

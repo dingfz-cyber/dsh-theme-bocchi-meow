@@ -1,0 +1,37 @@
+{
+  "name": "dsh-theme-bocchi-meow",
+  "version": "1.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dingfz-cyber/dsh-theme-bocchi-meow.git"
+  },
+  "homepage": "https://github.com/dingfz-cyber/dsh-theme-bocchi-meow#readme",
+  "bugs": { "url": "https://github.com/dingfz-cyber/dsh-theme-bocchi-meow/issues" },
+  "description": "波奇酱喵喵喵 · 樱花粉音乐手账主题，含深浅色适配与响应式角色插画。",
+  "icon": "assets/sidebar.png",
+  "license": "UNLICENSED",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib", "assets", "locale", "cordis.patch.yml", "README.md", "LICENSE"],
+  "engines": { "node": ">=20" },
+  "scripts": { "build": "node scripts/build.mjs", "check": "node --check lib/index.js && node --check lib/client.js" },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ],
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
