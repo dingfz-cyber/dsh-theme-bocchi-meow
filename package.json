@@ -19,7 +19,7 @@
     "./locale/*.json": "./locale/*.json",
     "./package.json": "./package.json"
   },
-  "files": ["lib", "assets", "locale", "cordis.patch.yml", "README.md", "LICENSE"],
+  "files": ["lib", "assets", "preview", "locale", "cordis.patch.yml", "README.md", "LICENSE"],
   "engines": { "node": ">=20" },
   "scripts": { "build": "node scripts/build.mjs", "check": "node --check lib/index.js && node --check lib/client.js" },
   "dsh": {
